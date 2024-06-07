@@ -53,9 +53,7 @@ figure, imshow(edgeImgDilated);
 % Get connected components of the binary edge image
 cc = bwconncomp(edgeImgDilated);
 
-% Assuming previous steps for setting up webcam and image processing remain unchanged
 
-% Assuming previous steps for setting up webcam and image processing remain unchanged
 
 % Loop through each connected component to fit smooth curves or handle small segments appropriately
 figure;
@@ -90,12 +88,3 @@ end
 
 hold off;
 
-% Since the next steps involve generating G-code based on the processed image, and the handling of connected components
-% and the drawing of curves have been adjusted, ensure the method of interpreting these curves into G-code
-% accounts for the nature of the data being processed (e.g., smooth curves or straight lines between points).
-
-% The G-code generation part would then proceed here, with considerations for how to translate the image analysis
-% results into movements and operations for a CNC machine, 3D printer, or similar device.
-
-% Note: This section is context-dependent and requires additional information about the target machine and the
-% intended use of the image data for precise instructions.
